@@ -28,9 +28,9 @@ class FizzBuzzTests {
   public void one_to_hundred() {
     FizzBuzz fizzbuzz = new FizzBuzz();
     fizzbuzz.one_to_hundred();
-    String list = "";
+    String expected_list = "";
 
-    list = "fizzBuzz, 1, 2, fizz, 4, Buzz, fizz, 7, 8, fizz, Buzz, " +
+    expected_list = "fizzBuzz, 1, 2, fizz, 4, Buzz, fizz, 7, 8, fizz, Buzz, " +
     "11, fizz, 13, 14, fizzBuzz, 16, 17, fizz, 19, Buzz, " +
     "fizz, 22, 23, fizz, Buzz, 26, fizz, 28, 29, fizzBuzz, " +
     "31, 32, fizz, 34, Buzz, fizz, 37, 38, fizz, Buzz, " +
@@ -41,6 +41,6 @@ class FizzBuzzTests {
     "fizz, 82, 83, fizz, Buzz, 86, fizz, 88, 89, fizzBuzz, " +
     "91, 92, fizz, 94, Buzz, fizz, 97, 98, fizz, Buzz";
 
-    assertEquals(list, outContent.toString());
+    assertEquals(expected_list, outContent.toString());
   }
 }
