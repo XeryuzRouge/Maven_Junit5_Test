@@ -20,10 +20,10 @@ public class FizzBuzz {
           j += "Buzz";
         }
       }
-              System.out.print(j);
-              if(i<100){
-              System.out.print(", ");
-          }
+      System.out.print(j);
+      if(i<100){
+        System.out.print(", ");
+      }
     }
   }
 
