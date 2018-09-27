@@ -24,8 +24,8 @@ class FizzBuzzTests {
     System.setOut(originalOut);
   }
 
-@Test
-public void one_to_hundred() {
+  @Test
+  public void one_to_hundred() {
     FizzBuzz fizzbuzz = new FizzBuzz();
     fizzbuzz.one_to_hundred();
     String list = "";
@@ -42,5 +42,5 @@ public void one_to_hundred() {
     "91, 92, fizz, 94, Buzz, fizz, 97, 98, fizz, Buzz";
 
     assertEquals(list, outContent.toString());
-}
+  }
 }
