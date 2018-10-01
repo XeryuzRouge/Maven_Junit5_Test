@@ -1,5 +1,6 @@
+com\mycompany\app\FizzBuzzKata.class
 com\mycompany\app\MultiplierIdentifier.class
 com\mycompany\app\Printer.class
 com\mycompany\app\ValuesExchanger.class
-com\mycompany\app\ArraysZipper.class
+com\mycompany\app\ElementsZipper.class
 com\mycompany\app\ListGenerator.class
