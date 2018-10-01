@@ -1,6 +1,5 @@
 package com.mycompany.app;
 
-import java.io.*;
 import java.util.*;
 
 public class ValuesExchanger {
@@ -15,5 +14,5 @@ public class ValuesExchanger {
     }
   return listToReturn;
   }
-  
+
 }

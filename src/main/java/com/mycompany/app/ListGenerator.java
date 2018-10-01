@@ -1,8 +1,6 @@
 
 package com.mycompany.app;
 
-import java.io.*;
-
 public class ListGenerator {
 
   public int[] generate(int elements) {
