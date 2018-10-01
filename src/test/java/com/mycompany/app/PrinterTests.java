@@ -53,11 +53,20 @@ class FizzBuzzTests {
 
   @Test public void ValuesExchanger_getExchanges() {
     ValuesExchanger valuesExchanger = new ValuesExchanger();
-    int [] fromList = {1, 3, 5, 7, 9, 11, 2, 4, 6, 8, 10, 12};
+    int[] fromList = {1, 3, 5, 7, 9, 11, 2, 4, 6, 8, 10, 12};
     int[] elementsToChange = {3, 6, 9, 12};
     String[] results = valuesExchanger.numbersToStrings("Fizz", elementsToChange, fromList);
     String[] expectedValues = {"1", "Fizz", "5", "7", "Fizz", "11", "2", "4", "Fizz", "8", "10", "Fizz"};
     assertArrayEquals(expectedValues, results);
   }
 
+  @Test public void ArraysZipper_getArrayZipped() {
+    ArraysZipper arraysZipper = new ArraysZipper();
+    String[] firstList = {"Fizz", "13", "14", "Fizz", "16", "17", "Fizz"};
+    String[] secondList = {"12", "13", "14", "Buzz", "16", "17", "18"};
+    String[] priorityValues = {"Fizz", "Buzz"};
+    String[] results = arraysZipper.zipThese(firstList, secondList, priorityValues);
+    String[] expectedList = {"Fizz", "13", "14", "FizzBuzz", "16", "17", "Fizz"};
+    assertArrayEquals(expectedList, results);
+  }
 }
