@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.FizzBuzzTests" time="0.022" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.FizzBuzzTests" time="0.03" tests="4" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="MX"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\alien\AppData\Local\Temp\surefire2472810459549889557\surefirebooter132766805539948253.jar C:\Users\alien\AppData\Local\Temp\surefire2472810459549889557 2018-10-01T10-59-14_820-jvmRun1 surefire6465614902741517403tmp surefire_02885258273773611611tmp"/>
+    <property name="sun.java.command" value="C:\Users\alien\AppData\Local\Temp\surefire6798961550923754292\surefirebooter5889952373783619624.jar C:\Users\alien\AppData\Local\Temp\surefire6798961550923754292 2018-10-01T11-40-20_235-jvmRun1 surefire7620534873679540177tmp surefire_02323453092983647079tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\alien\project-local\Java\maven_test\my-app\target\test-classes;C:\Users\alien\project-local\Java\maven_test\my-app\target\classes;C:\Users\alien\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.3.1\junit-jupiter-api-5.3.1.jar;C:\Users\alien\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\alien\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\alien\.m2\repository\org\junit\platform\junit-platform-commons\1.3.1\junit-platform-commons-1.3.1.jar;C:\Users\alien\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.3.1\junit-jupiter-params-5.3.1.jar;C:\Users\alien\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.3.1\junit-jupiter-engine-5.3.1.jar;C:\Users\alien\.m2\repository\org\junit\platform\junit-platform-engine\1.3.1\junit-platform-engine-1.3.1.jar;C:\Users\alien\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\alien\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\alien"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\alien\AppData\Local\Temp\surefire2472810459549889557\surefirebooter132766805539948253.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\alien\AppData\Local\Temp\surefire6798961550923754292\surefirebooter5889952373783619624.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_181\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_181\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_181\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,7 +60,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="ListGenerator_getWhatItGenerates" classname="com.mycompany.app.FizzBuzzTests" time="0.005"/>
-  <testcase name="MultiplierIdentifier_getMultipliers" classname="com.mycompany.app.FizzBuzzTests" time="0.004"/>
-  <testcase name="Printer_getWhatItPrints" classname="com.mycompany.app.FizzBuzzTests" time="0.005"/>
+  <testcase name="ListGenerator_getWhatItGenerates" classname="com.mycompany.app.FizzBuzzTests" time="0.004"/>
+  <testcase name="ValuesExchanger_getExchanges" classname="com.mycompany.app.FizzBuzzTests" time="0.013">
+    <failure message="array lengths differed, expected.length=11 actual.length=12" type="java.lang.AssertionError">java.lang.AssertionError: array lengths differed, expected.length=11 actual.length=12
+	at com.mycompany.app.FizzBuzzTests.ValuesExchanger_getExchanges(PrinterTests.java:60)
+</failure>
+  </testcase>
+  <testcase name="MultiplierIdentifier_getMultipliers" classname="com.mycompany.app.FizzBuzzTests" time="0.003"/>
+  <testcase name="Printer_getWhatItPrints" classname="com.mycompany.app.FizzBuzzTests" time="0.004"/>
 </testsuite>
